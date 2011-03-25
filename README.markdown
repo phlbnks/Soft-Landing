@@ -32,7 +32,7 @@ If you want to use more easing effects include an easing library - jQuery UI is 
 			}
 		});
 
-- Replace 'a[href^="#"]' with the selector for your links if necessary.
+- Replace `a[href^="#"]` with the selector for your links if necessary.
 - Replace easeOutCirc with the easing method you want. If you don't need 'complex'/are not using jQuery UI then you can delete the variable and jQuery core will use it's default 'swing'. 
 - Replace 1500 with the duration for the scrolling animation. 
 
