@@ -37,7 +37,7 @@ If you want to use more easing effects include an easing library - jQuery UI is 
 - Replace 1500 with the duration for the scrolling animation. 
 
 
-$('a[href^="#"]').click(function(){
+	$('a[href\^="#"]').click(function(){
 		var dest = $($(this).attr('href')).offset().top;
 		var dHeight = $(document).height();
 		var vHeight = $(window).height();
