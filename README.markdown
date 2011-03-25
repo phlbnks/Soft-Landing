@@ -2,7 +2,7 @@ Soft-Landing
 ==================================================
 Version 0.1
 
-Soft-Landing is a small script to prevent an animated scrollTo being suddenly stopped due to the destination being within the last viewport' height of the document.
+Soft-Landing is a small script to prevent an animated scrollTo being suddenly stopped due to the destination being within the last viewport's height of the document.
 
 The floating element code is based on http://linowski.ca/experiments/03_sticky_floating_nav/assets/core.js by jakub@linowski.ca
 
