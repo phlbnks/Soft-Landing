@@ -1,6 +1,6 @@
 Soft-Landing
 ==================================================
-Version 0.1
+Version 0.2
 
 Soft-Landing is a small script to prevent an animated scrollTo being suddenly stopped due to the destination being within the last viewport's height of the document.
 
