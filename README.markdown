@@ -38,15 +38,15 @@ If you want to use more easing effects include an easing library - jQuery UI is 
 
 
 		$('a[href^="#"]').click(function(){
-			var dest = $($(this).attr('href')).offset().top;
+			var dest = $(this.hash).offset().top;
 			var dHeight = $(document).height();
 			var vHeight = $(window).height();
 			if (dest < (dHeight-vHeight)) {
-				$('html, body').stop().animate({scrollTop: dest},1500,'easeOutCirc');
+				$('html,body').stop().animate({scrollTop: dest},1500,'easeOutCirc');
 			}
 				else {
 					var dest = (dHeight-vHeight);
-					$('html, body').stop().animate({scrollTop: dest},1500,'easeOutCirc');
+					$('html,body').stop().animate({scrollTop: dest},1500,'easeOutCirc');
 				}
 			return false;
 		});
@@ -58,3 +58,10 @@ To Do
 - Re-write code to allow variable to be passed into the scripts preventing the need to modify the js file.
 - Allow horizontal scrolling too.
 - Add license info.
+- Replace `'html,body'` with something better.
+
+
+Changelog
+---------------
+- 0.1 - Initial release.
+- 0.2 - Replaced `return false;` with `event.preventDefault();` and moved to the start to the click function to ensure defailt click behaviour is always stopped. - Changed to `$(this.hash).offset().top;` after testing in JSPerf.
