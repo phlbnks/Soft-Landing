@@ -1,4 +1,4 @@
-//softLanding v0.2
+//softLanding v0.3
 
 $(document).ready(function(){
 	// Take an item, if the viewport scrolls past it's position, pin it to the top of the viewport
@@ -14,8 +14,7 @@ $(document).ready(function(){
 	});
 	// Here we bind to clicks on the anchors, animate the movement, and prevent a sudden stop.
 	//** by Phil Banks http://customcreative.co.uk
-	$('a[href^="#"]').click(function(){
-		event.preventDefault();
+	$('a[href^="#"]').click(function(e){
 		//Get the offset of the top of the element just clicked
 		var dest = $(this.hash).offset().top;
 		var dHeight = $(document).height(); // height of document
@@ -29,5 +28,6 @@ $(document).ready(function(){
 				var dest = (dHeight-vHeight);
 				$('html,body').stop().animate({scrollTop: dest},1500,'easeOutCirc');
 			}
+		e.preventDefault();
 	});
 });

@@ -1,6 +1,6 @@
 Soft-Landing
 ==================================================
-Version 0.2
+Version 0.3
 
 Soft-Landing is a small script to prevent an animated scrollTo being suddenly stopped due to the destination being within the last viewport's height of the document.
 
@@ -65,3 +65,4 @@ Changelog
 ---------------
 - 0.1 - Initial release.
 - 0.2 - Replaced `return false;` with `event.preventDefault();` and moved to the start to the click function to ensure defailt click behaviour is always stopped. - Changed to `$(this.hash).offset().top;` after testing in JSPerf.
+- 0.3 - Better prevent.Default implimentation to stop an error in the JS preventing browser default behaviour and breaking the page. 
